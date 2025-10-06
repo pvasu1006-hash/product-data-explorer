@@ -12,16 +12,15 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
-    "drizzle-orm": "^1.0.0",
+    "drizzle-orm": "^0.30.10",
     "pg": "^8.10.0",
     "p-queue": "^7.1.0",
     "express-rate-limit": "^6.0.0",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
-    "typescript": "5.2.2",
-    "ts-node": "10.9.1",
-    "ts-node-dev": "2.0.0",
-    "@types/node": "20.4.2"
+    "typescript": "^5.2.2",
+    "@types/node": "^20.4.2",
+    "ts-node-dev": "^2.0.0"
   }
 }
