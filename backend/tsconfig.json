@@ -1,15 +1,11 @@
 {
-  "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2020",
-    "lib": [
-      "ES2020"
-    ],
+"compilerOptions": {
+    "target": "ES2020",       // or later
+    "module": "CommonJS",     // or "ESNext" if using ES modules
+    "lib": ["ES2020"],        // include JS standard library
+    "types": ["node"],        // <--- this is key
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "outDir": "dist",
     "skipLibCheck": true
   },
   "include": [
