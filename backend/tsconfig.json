@@ -1,9 +1,8 @@
 {
-"compilerOptions": {
-    "target": "ES2020",       // or later
-    "module": "CommonJS",     // or "ESNext" if using ES modules
-    "lib": ["ES2020"],        // include JS standard library
-    "types": ["node"],        // <--- this is key
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "lib": ["ES2020"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true
