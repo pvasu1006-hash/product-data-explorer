@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: product-data-explorer-backend
+    env: docker
+    branch: main
+    repo: https://github.com/<YOUR_GITHUB_REPO_URL>
+    rootDir: backend
+    plan: starter
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: product-data-explorer-db
+          property: connectionString
+  - type: web
+    name: product-data-explorer-frontend
+    env: node
+    branch: main
+    repo: https://github.com/<YOUR_GITHUB_REPO_URL>
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+databases:
+  - name: product-data-explorer-db
+    plan: starter

@@ -1,6 +1,6 @@
-# Product Data Explorer
+# Product Data Explorer (Render + Postgres)
 
-This repository contains a frontend (Next.js) and backend (NestJS) scaffold for the Internshala assignment.
+This repo contains a frontend (Next.js) and backend (NestJS) scaffold updated to use PostgreSQL and deploy fully on Render.
 
 ## Quickstart
 
@@ -15,9 +15,10 @@ npm run start:dev
 2. Frontend
 ```
 cd frontend
-cp .env.example .env
 npm install
 npm run dev
 ```
 
-This scaffold uses Turso-compatible DATABASE_URL for production. Inspect crawler selectors and update them to match the target site before scraping.
+## Deploy on Render
+- Create a PostgreSQL database on Render (product-data-explorer-db)
+- Add services for backend (Docker) and frontend (Node) as described in the full deployment guide.
