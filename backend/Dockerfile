@@ -1,7 +1,8 @@
 FROM mcr.microsoft.com/playwright:focal
+
 WORKDIR /app
 COPY package*.json ./
-RUN npm install --legacy-peer-deps
+RUN npm ci --legacy-peer-deps --unsafe-perm || npm install --legacy-peer-deps --unsafe-perm
 COPY . .
 RUN npm run build
 EXPOSE 4000
